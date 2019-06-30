@@ -20,3 +20,14 @@
         OPTION 说明
             1、-s 列出 镜像收藏不小于多少的 eg: 收藏说不小于30tomcat镜像 docker search -s 30 tomcat  
 
+        docker pull imageName  从仓库中拉取镜像 eg: docker pull tomcat 相当于 docker pull tomcat:latest
+
+        docker rmi 某个镜像名字/ID 
+            删除单个： docker rmi -f 镜像ID
+            删除多个： docker rmi -f imageName1:TAG imageName2:TAG
+            全部删除： docker rmi $(docker image -qa)
+        
+
+
+
+
