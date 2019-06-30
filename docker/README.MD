@@ -3,7 +3,12 @@
 ## docker run imageName 到底执行了什么？
 ![](https://github.com/zhangfuyin/java/raw/master/docker/images/docker_run.jpeg)
 ## docker常用命令
-### 帮助命令
+### 1、帮助命令
         docker version
         docker info 
         docker --help
+### 2、镜像命令
+        docker images 列出本地主机上的镜像
+        OPTION 说明
+            1、-a 列出本地所有镜像（含中间映像层）
+            2、-q 只显示镜像ID
