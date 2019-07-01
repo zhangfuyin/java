@@ -53,10 +53,20 @@
             2、docker stop  +   容器ID/容器名称
             3、docker restart + 容器ID/容器名称
             4、docker kill  +   容器ID/容器名称  强制停止容器
+
         删除容器
             1、docker rm + 容器ID
             2、docker rm -f + 容器ID
             3、docker rm -f $(docker ps -qa )  或者 docker ps -qa | xagrs docker rm 一次性删除多个容器
+
+        docker容器后台启动 docker run -d centos  注意：docker ps -a 查看发现容器已经退出（这是docker机制问题）
+
+        docker logs 查看容器日志 docker logs -t -f -tail 4 容器ID
+        OPTION 说明：
+            1、-t 加入时间戳
+            2、-f 跟随最新的日志打印
+            3、-tail 数字  显示最后多少条
+
 
         
         
