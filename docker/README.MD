@@ -70,11 +70,3 @@
         docker top 容器ID 查看容器内运行的进程
 
         docker inspect 容器ID 查看容器内部细节
-
-
-        
-        
-
-
-
-
