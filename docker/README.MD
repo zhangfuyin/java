@@ -67,6 +67,10 @@
             2、-f 跟随最新的日志打印
             3、-tail 数字  显示最后多少条
 
+        docker top 容器ID 查看容器内运行的进程
+
+        docker inspect 容器ID 查看容器内部细节
+
 
         
         
