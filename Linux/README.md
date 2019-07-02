@@ -14,3 +14,6 @@
   |mnt|mount|临时外部设备挂接在此目录|
   |var|variable|变量文件|
   |pro|process|存放系统内存中的信息|
+  
+## 2、初学者新装Linux通过Xshell连不上Linux
+  查看sshd 服务是否启动  可以通过systemctl restart sshd 命令重新启动sshd服务
