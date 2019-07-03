@@ -17,3 +17,6 @@
   
 ## 2、初学者新装Linux通过Xshell连不上Linux
   查看sshd 服务是否启动  可以通过systemctl restart sshd 命令重新启动sshd服务
+  
+## 3、vim 命令
+  1、拷贝当前行的第N行 yy 按下p键进行黏贴  注意：在普通模式上按下yy复制 p黏贴
