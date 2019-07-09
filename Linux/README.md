@@ -89,6 +89,8 @@
     * pageup   代表向上翻一页
     * /字符串   向下搜索字符串的功能 n:向下查找 N：向上查找
     * ?字符串   向上搜索字符串功能  n:向下查找 N：向上查找
+  * head指令 用于显示文件开头部分内容，默认显示文件的前10行 head -n 5 文件
+  * tail指定 输出文件尾部内容  tail -n 5 文件  查看文件最后5行  tail -f 实时追踪文件的变化
     
 * 输出重定向指令(>) 和 追加指令（ >> ）
   * 输出重定下、会覆盖 ls -l > text.txt 将ls -l 列表的信息写到text.txt (不存在的话会创建)
@@ -96,6 +98,14 @@
   * cat test1.txt > text2.txt 将文件1的内容覆盖到文件2中
   * echo “hello world” >> test.txt 将hello world追加到test.txt 
   
+* echo 用于输出内容到控制台 一般用于输出当前的环境路径 
+  
+* 软链接（相当于windows的快捷方式）  ln -s   ln -s a/b linkToB
+
+* history 查看已经执行过的历史指令、也可以执行历史指令 用 ！行号 执行已经执行的指令
+
+
+   
   
   
   
