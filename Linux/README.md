@@ -83,8 +83,18 @@
     * control + B 向上滚动一屏
     * = 输出当前行号
     * :f 输出当前文件名和行号
-  
-  
+  * less指令 用于查看大文件有更高的效率 less /etc/profile
+    * 空白键（space） 代表向下翻一页
+    * pagedown 代表向下翻一页
+    * pageup   代表向上翻一页
+    * /字符串   向下搜索字符串的功能 n:向下查找 N：向上查找
+    * ?字符串   向上搜索字符串功能  n:向下查找 N：向上查找
+    
+* 输出重定向指令(>) 和 追加指令（ >> ）
+  * 输出重定下、会覆盖 ls -l > text.txt 将ls -l 列表的信息写到text.txt (不存在的话会创建)
+  * 追加 ls -l >> text.txt 将ls -l 列表信息追加到text.txt 文件中
+  * cat test1.txt > text2.txt 将文件1的内容覆盖到文件2中
+  * echo “hello world” >> test.txt 将hello world追加到test.txt 
   
   
   
