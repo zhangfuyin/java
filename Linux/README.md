@@ -115,7 +115,6 @@
   7、日历 cal 默认显示本月日历  cal 2020  显示2020年日历 </br>
 
 ## 搜索查询指令
-
   * find指令 是将指定的目录向下递归查找子文件 将满足条件的目录或者文件显示在终端
     * find /root -name text.txt 根据文件名称精确查找 find /root -name *.txt 模糊搜索
     * find /root -user root     查询指定用户名文件
@@ -127,6 +126,35 @@
     * cat Hello.java | grep public 在Hello.java文件中  找public字符串
     * cat Hello.java | grep -n public  显示匹配行和行号
     * cat Hello.java | grep -i public  忽略大小写
+
+## 压缩和解压类
+  * gzip  文件    压缩文件 功能描述： 只能将将文件压缩*.gz文件(注意 1:只能压缩文件不能是目录、2:压缩之后原始文件会被删除)
+  * gunzip *.gz   解压文件 功能描述：解压缩文件(注意： 1:解压之后 *.gz文件会被删除)
+  * zip    基本语法： zip [选项] xxx.zip ，将要压缩文件的内容（功能描述：压缩文件和目录的命令）
+    * -r 递归压缩   `eg: zip root.zip -r ../root`
+  * unzip  基本语法：unzip [选项] XXX.zip 
+    * -d<目录> ： 指定解压后文件的存放目录  `eg: unzip root.zip -d ./e `
+  * tar 指令 zcvf：压缩，压缩后的文件格式：*.tar.gz   zxvf: 解压 
+    * zcvf  `eg: tar -zcvf ./e/mypackage.tar.gz /Home`
+    * zxvf  `eg: tar -zxvf ./e/mypackage.tar.gz ./d`
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   
   
   
