@@ -115,10 +115,20 @@
   7、日历 cal 默认显示本月日历  cal 2020  显示2020年日历 </br>
 
 ## 搜索查询指令
+
   * find指令 是将指定的目录向下递归查找子文件 将满足条件的目录或者文件显示在终端
-    * find /root -name text.txt 根据文件名称精确查找
+    * find /root -name text.txt 根据文件名称精确查找 find /root -name *.txt 模糊搜索
     * find /root -user root     查询指定用户名文件
     * find /root -size +20M     查找文件大于20M的文件
+    
+  * locate指令 快速定位文件路径 为了保证查询结果的准确性、管理员必须通过updatedb 定期更新locate数据库</br>
+  
+  * grep指令和管道（|）指令 | 指的是把前面的结果交给后面的指令执行  
+    * cat Hello.java | grep public 在Hello.java文件中  找public字符串
+    * cat Hello.java | grep -n public  显示匹配行和行号
+    * cat Hello.java | grep -i public  忽略大小写
+  
+  
   
     
     
