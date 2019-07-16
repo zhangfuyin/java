@@ -138,16 +138,40 @@
     * zcvf  `eg: tar -zcvf ./e/mypackage.tar.gz /Home`
     * zxvf  `eg: tar -zxvf ./e/mypackage.tar.gz ./d`
   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+## Linux组管理和权限管理
+  * 基本概念：Linux中的每个用户必须属于一个组、不能独立于组外、在Linux中每个文件有所有者、所在组、其他组的概念
+  * 查看文件的所有者  ls-ahl 
+  * 改变文件的所有者 chown 用户 文件 
+  * 修改文件的所在组 chgrp 组名 文件
+  * 修改用户的所在组 usermod -g 组名 用户名
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     
     
     
