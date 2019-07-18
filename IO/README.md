@@ -22,7 +22,7 @@
     * ObjectOutputStream
   * 转换流 : 字节流转字符流
     * InputStreamReader
-    * OutputStream
+    * OutputStreamWriter
   * 打印流
     * PrintWriter
     * PrintStream
