@@ -5,13 +5,13 @@
     * 字符流 reader或writer结尾  比较适合读取纯文本文件
 ## 需要掌握的16个流
   * 基本输入、输出
-   * FileInputStream
-   * FileOutputStream
-   * FileReader
-   * FileWriter
+    * FileInputStream
+    * FileOutputStream
+    * FileReader
+    * FileWriter
      
   * 缓冲流
-   * BufferedInputStream
-   * BufferedInputStream
-   * BufferedReader
-   * BufferedWriter
+    * BufferedInputStream
+    * BufferedInputStream
+    * BufferedReader
+    * BufferedWriter
