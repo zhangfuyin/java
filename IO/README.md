@@ -28,5 +28,7 @@
     * PrintStream
     
 ## IO流的继承结构图
+  * input、output
+    [](https://github.com/zhangfuyin/java/raw/master/IO/images/input_output_img.png)  
   
     
