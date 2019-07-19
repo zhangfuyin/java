@@ -6,6 +6,8 @@
 ## 需要掌握的16个流
   * 基本输入、输出
     * FileInputStream
+      * 构造方法1: FileInputStream(String name) name 表示文件路径
+      
     * FileOutputStream
     * FileReader
     * FileWriter
