@@ -172,6 +172,15 @@
     * 第二种方式 通过数字变更权限
       * r=4 w=2 x=1 rwx=4+2+1=7
       * chmod u=rwx,g=rw,o=r 相当于 chmod 751
+ 
+ ## crond 任务调度
+  * 基本说明：在特定的时间、执行特定的命令或者程序
+  * 基本语法：crontab [选项]
+     * -e 编辑crontab   定时任务
+     * -l 查询crontab任务
+     * -r 删除当前用户所有的crontab任务
+
+
     
         
   
