@@ -203,11 +203,11 @@
    * 查看系统磁盘使用情况 df -h 
    * 统计文件或者目录所占磁盘空间的大小 du -ach --max-depth=1 /zhangfy_test 
    * 工作的实用指令
-      * 统计/home 文件夹下文件的个数
-      * 统计/home 文件夹下目录的个数
-      * 统计/home 文件夹下文件个数 包括子文件里面的
-      * 统计/home 文件夹下目录的个数 包括子文件里面的
-      * 以树状结构显示目录结构
+      * 统计/home 文件夹下文件的个数 ls -l /home | grep '^-' | wc -l
+      * 统计/home 文件夹下目录的个数 ls -l /home | grep '^d' | wc -l
+      * 统计/home 文件夹下文件个数 包括子文件里面的 ls -lR /home | grep '^-' | wc -l
+      * 统计/home 文件夹下目录的个数 包括子文件里面的 ls -lR /home | grep '^d' | wc -l
+      * 以树状结构显示目录结构 tree /home
       
      
 
