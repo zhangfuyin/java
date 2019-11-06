@@ -219,7 +219,13 @@
           PERSISTENT_DHCLIENT=yes <br>
           TYPE=Ethernet <br>
           USERCTL=no <br>
-      * 固定IP
+      * 固定IP<br>
+          BOOTPROTO=static        开机协议，有dhcp及static <br>
+          ONBOOT=yes  设置为开机启动<br>
+          IPADDR=192.168.2.123  你想要设置的固定IP，192.168.2.2-255之间都可以，请自行验证<br>
+          NETMASK=255.255.255.0 子网掩码，不需要修改<br>
+          GATEWAY=	192.168.2.1 网关，这里 NAT设置里的网关地址要一样<br>
+          DNS1=114.114.114.114 这个是国内的DNS地址，是固定的<br>
       
      
 
