@@ -210,15 +210,15 @@
       * 以树状结构显示目录结构 tree /home
   ## Linux 网络环境配置
    * 设置固定IP 
-      * 原始配置
-          BOOTPROTO=dhcp
-        DEVICE=eth0
-        HWADDR=52:54:00:6f:04:0c
-        NM_CONTROLLED=no
-        ONBOOT=yes
-        PERSISTENT_DHCLIENT=yes
-        TYPE=Ethernet
-        USERCTL=no
+      * 原始配置<br>
+          BOOTPROTO=dhcp <br>
+          DEVICE=eth0 <br> 
+          HWADDR=52:54:00:6f:04:0c <br>
+          NM_CONTROLLED=no <br>
+          ONBOOT=yes <br>
+          PERSISTENT_DHCLIENT=yes <br>
+          TYPE=Ethernet <br>
+          USERCTL=no <br>
       * 固定IP
       
      
