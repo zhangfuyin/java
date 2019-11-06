@@ -208,6 +208,18 @@
       * 统计/home 文件夹下文件个数 包括子文件里面的 ls -lR /home | grep '^-' | wc -l
       * 统计/home 文件夹下目录的个数 包括子文件里面的 ls -lR /home | grep '^d' | wc -l
       * 以树状结构显示目录结构 tree /home
+  ## Linux 网络环境配置
+   * 设置固定IP 
+    * 原始配置
+        BOOTPROTO=dhcp
+        DEVICE=eth0
+        HWADDR=52:54:00:6f:04:0c
+        NM_CONTROLLED=no
+        ONBOOT=yes
+        PERSISTENT_DHCLIENT=yes
+        TYPE=Ethernet
+        USERCTL=no
+    * 固定IP
       
      
 
