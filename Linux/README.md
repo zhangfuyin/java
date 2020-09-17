@@ -227,9 +227,8 @@
           DNS1=114.114.114.114 这个是国内的DNS地址，是固定的<br>
           
   ## Linux 进程管理
-    * 1 来一张图片
-       ![image](https://github.com/zhangfuyin/java/blob/master/image/ps_details.png)
-    * 2
+    ![image](https://github.com/zhangfuyin/java/blob/master/image/ps_details.png)
+    
     
       
      
