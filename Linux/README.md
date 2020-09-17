@@ -228,6 +228,7 @@
           
   ## Linux 进程管理
     ![](https://github.com/zhangfuyin/java/blob/master/image/ps_details.png)
+    ![image](https://github.com/zhangfuyin/java/blob/master/docker/images/docker_run.jpeg)
     
     
       
