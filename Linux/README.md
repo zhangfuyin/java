@@ -228,6 +228,7 @@
           
   ## Linux 进程管理
     * 1 来一张图片
+       ![image](https://github.com/zhangfuyin/java/blob/master/image/ps_details.png)
     * 2
     
       
