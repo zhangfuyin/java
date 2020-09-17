@@ -227,7 +227,15 @@
           DNS1=114.114.114.114 这个是国内的DNS地址，是固定的<br>
           
   ## Linux 进程管理
-  ![image](https://github.com/zhangfuyin/java/blob/master/Linux/image/ps_details.png)
+    
+    * 先看一张图片
+   ![image](https://github.com/zhangfuyin/java/blob/master/Linux/image/ps_details.png)
+    
+    * ps -aux | more   如果想查看进程的CPU占用率和内存占用率，可以使用aux
+    
+    
+    *  ps -ef 可以查看到父进程如果想查看进程的父进程ID和完整的COMMAND命令，可以使用ef
+    
     
     
       
