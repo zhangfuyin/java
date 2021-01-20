@@ -247,7 +247,15 @@
       
     
   ## Linux 服务管理
-       
+  
+     * 背景介绍
+     每个服务都是一个进程。通常都是后台运行、并监听一个端口 等待其他程序的请求，比如（防火墙、mysql 等等）因此我们有叫守护进程
+     
+     * serivce 服务 [start | stop |  reload | status ] 但是从CentOS7.0之后 使用 systemctl
+     
+     * telnet指令用来测试Linux的某个端口是否运行、并可以连接  telnet ip port
+     
+     
       
      
 
