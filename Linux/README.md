@@ -285,7 +285,7 @@
      * 动态监控进程
                 top和ps指令很相似 都是显示正在执行的进程、最大的不同 top指令执行一段时间后、可以更新正在运行的进程
     
-   ![image](https://github.com/zhangfuyin/java/image/QQ20210121-005044@2x.png)
+   ![image](https://github.com/zhangfuyin/java/blob/master/image/top_detail.png)
        
       
                 
