@@ -259,6 +259,10 @@
       * 关闭或者启动防火墙、立即生效
       * 这种方式都是临时生效、当系统重启后、还是回归以前对服务的配置
       * 如果希望设置某个服务自动启动或永久关闭 用chkconfig 指令
+     
+     * Linux到底有那么服务 查询服务指令
+      * setup
+      * ls -l  /etc/init.d/  但是从CentOS7.0之后 /usr/lib/systemd/system
       
      
       
