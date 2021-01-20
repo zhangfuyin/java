@@ -264,7 +264,38 @@
       * setup
       * ls -l  /etc/init.d/  但是从CentOS7.0之后 /usr/lib/systemd/system
       
+     * Linux运行级别（7个）
+      * 0： 关机
+      * 1： 单用户登陆（找回密码）
+      * 2： 多用户、无网络服务
+      * 3： 多用户、有网络服务
+      * 4： 保留
+      * 5： 图形界面
+      * 6： 系统重启
      
+      * 指定运行级别的指令 init(0 | 1 | 2 | .....)
+      * 查看运行级别 cat /etc/inittab
+      
+     
+     * chkconfig 指令  可以给服务各个设置运行级别设置自动启动/关闭
+      * 查看服务 chkconfig -- list | grep xx  或者 chkconfig 服务名 --list    CentOS7.0之后使用systemctl list-unit-file
+      * 某个服务在某个运行级别下自启动 chkconfig --level 3 on/off
+      
+      
+     * 动态监控进程
+                top和ps指令很相似 都是显示正在执行的进程、最大的不同 top指令执行一段时间后、可以更新正在运行的进程
+            
+       ![image](https://github.com/zhangfuyin/java/blob/master/Linux/image/ps_details.png)
+                
+       
+      
+                
+                
+     
+     
+      
+      
+      
       
      
      
