@@ -282,10 +282,37 @@
       * 某个服务在某个运行级别下自启动 chkconfig --level 3 on/off
       
       
-     * 动态监控进程
+     * 动态监控进程 top指令
                 top和ps指令很相似 都是显示正在执行的进程、最大的不同 top指令执行一段时间后、可以更新正在运行的进程
     
    ![image](https://github.com/zhangfuyin/java/blob/master/image/top_detail.png)
+   
+      * 选项
+        * -d 20  每隔多久刷新  按下q退出
+        * -i 不显示任何闲置或者僵死进程
+        * -p 指定进程ID 监控某个进程的状态 
+      
+      
+      * 互动指令
+        * P 以cpu使用率排序 默认
+        * M 以内存的使用率排序
+        * N PID排序
+        * q 退出
+        
+    * netstat 指令监控网络服务
+      * 选项
+        * -an 按一定的顺序排序输出
+        * -p 显示哪个进程在调用
+        * netstat -anp | more 查询系统所有的网络服务
+
+
+      * 互动指令
+        * P 以cpu使用率排序 默认
+        * M 以内存的使用率排序
+        * N PID排序
+        * q 退出
+
+   
        
       
                 
