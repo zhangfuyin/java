@@ -311,7 +311,27 @@
         * M 以内存的使用率排序
         * N PID排序
         * q 退出
-
+  
+  
+  ## shell编程
+   * 变量声明
+   
+    *  开头加上#!/bin/bash
+    
+    * 输出系统变量 echo “PATH = $PATH”   echo "USER = $USER"
+    
+    * 定义变量 A=100  echo "$A"; 撤销变量 unset A  ; 注意 静态变量不能unset 声明静态变量： readonly A=99;
+    
+    * 可以把变量提升为全局变量、可供其他shell程序使用
+    
+    * 将运行结果返回给一个变量  RESULT=`ls -l`  或者RESULT=`ls -a`
+    
+   * 配置环境变量
+    
+    * 在/etc/profile  加上比如 MY_HOME=“江苏省 苏州市” export MY_HOME 在别的shell脚本就可以直接使用这个变量了 echo "$MY_HOME" 
+    
+    * 
+    
    
        
       
