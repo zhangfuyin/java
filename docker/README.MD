@@ -4,6 +4,11 @@
 ## docker run imageName 到底执行了什么？
 ![image](https://github.com/zhangfuyin/java/blob/master/docker/images/docker_run.jpeg)
 
+
+## docker安装 
+  * 参照官网 www.docker.com
+
+
 ## docker常用命令
 ### 1、帮助命令
 
