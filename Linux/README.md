@@ -435,8 +435,23 @@
           NUM=$[$NUM-1]
          donw'
          
-         
-         
+## 安装JDK
+
+  * 通过tar -zxvf 解压包
+  * 配置环境变量 vi /etc/profile
+    * export JAVA_HOME=/opt/jdk1.8.0_281
+    * export PATH=$JAVA_HOME/bin:$PATH
+    * export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+  * source /etc/profile
+
+
+        
+ ## mysql安装
+ 
+ * 通过rpm -qa | grep mysql 来查询mysql是否安装
+ * 
+ 
          
          
         
