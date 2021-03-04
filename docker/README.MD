@@ -65,6 +65,7 @@
             3、docker rm -f $(docker ps -qa )  或者 docker ps -qa | xagrs docker rm 一次性删除多个容器
 
         docker容器后台启动 docker run -d centos  注意：docker ps -a 查看发现容器已经退出（这是docker机制问题）
+                如何解决呢 加一个客户端 比如 docker run -d centos /bin/sh -c "while true; do echo zhangfuyin;sleep 3; done"
 
         docker logs 查看容器日志 docker logs -t -f -tail 4 容器ID
         OPTION 说明：
@@ -75,3 +76,15 @@
         docker top 容器ID 查看容器内运行的进程
 
         docker inspect 容器ID 查看容器内部细节
+        
+        进入容器：
+              docker attach 容器ID  进入容器内部
+              docker exec -it 容器ID ls -l /opt 不进入容器  执行容器命令返回结果
+              
+        容器文件备份到宿主机上  docker cp 容器ID:文件路径 宿主机文件路径
+        
+        
+        
+        
+        
+
