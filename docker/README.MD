@@ -40,6 +40,9 @@
         OPTION 说明
             1、-i 以交互式运行容器  通常于-t 同时使用
             2、-t 为容器重新分配一个伪输入终端  通常于-i同时使用  eg: docker run -it --name mycentos centos
+            3、-p 指定端口运行容器  docker run -it -p 8899:8080 tomcat   那么通过浏览器直接输入 www.ip:8899 自动就能访问docker运行的tomcat实例
+            4、-P 随机指定端口      docker run -it -P tomcat
+            AS.AD
 
         docker ps[options] 查看正在运行的容器
         OPTION 说明：
@@ -82,6 +85,9 @@
               docker exec -it 容器ID ls -l /opt 不进入容器  执行容器命令返回结果
               
         容器文件备份到宿主机上  docker cp 容器ID:文件路径 宿主机文件路径
+        
+        docker commit 提交容器副本 使之成为新的镜像
+               docker commit -a='zhangfuyin' -m='remove doc' 容器ID
         
         
         
