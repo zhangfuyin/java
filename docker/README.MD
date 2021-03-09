@@ -88,6 +88,24 @@
         
         docker commit 提交容器副本 使之成为新的镜像
                docker commit -a='zhangfuyin' -m='remove doc' 容器ID
+               
+   ### 4、容器数据卷
+        1、作用 数据持久化、容器间继承 + 共享数据
+        
+        2、如何添加数据卷呢  
+           * 命令行 实现宿主机和容器的数据共享
+              1、docker run -it -v 宿主机路径：容器路径 镜像ID   eg： (docker run -it -v /hostDataVolume: /containerDataVolume 2cd663b9e521)
+              2、如何查看容器和宿主机数据挂载成功（数据共享）呢？ docker inspect 
+              3、比如容器停止后、修改宿主机数据 、重新启动容器  数据是否同步呢？  答案是同步的
+              4、带权限的数据共享 比如让容器文件只读操作  eg:(docker run -it -v /hostDataVolume:/contailnerDataVolume:ro 2cd663b9e521) 执行上述命令 容器的目录只读 无法更改
+              
+              
+              
+           * dockerfile
+         
+   
+   
+
         
         
         
