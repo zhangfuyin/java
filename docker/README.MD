@@ -103,7 +103,7 @@
               
            * dockerfile
               
-   ### 4、Dockerfile            
+   ### 5、Dockerfile            
               
           *  体系结构(关键保留字)
               * FROM            基础镜像、当前镜像是基于哪个镜像的
@@ -118,11 +118,29 @@
               * CMD             指定一个容器启动时要运行的命令
               * ENTRYPOINT      指定一个容器启动时要运行的命令 ENTRYPOINT的目的和CMD一样 都是指定容器启动程序及参数
               * ONBUILD         当构建一个被继承的Dockerfile时运行命令、父镜像在被子镜像继承后父镜像的onbuild被触发
+
+         * 自定义镜像mycentos
+              * 编写 Dockerfile  vim centos_dockerfile
+              
+                FROM centos
+                MAINTAINER zhangfuyin<690386511@qq.com>
+                ENV WORK_DIR /usr/local
+                WORKDIR $WORK_DIR
+                RUN yum -y install vim
+                RUN yum -y install net-tools
+
+                RUN echo '容器构建成功！！'
+                EXPOSE 80
+                CMD /bin/bash
+                
+                
+              * 构建 docker build -f /docker/centos_dockerfile -t zhangfuyin_centos:1.0 .  注意：后面有一个. 为了告诉docker上下文执行环境
+              * 运行 docker run -it 镜像id
+              * 列出镜像的变更历史 docker history 镜像名
               
               
-         
-   
-   
+              
+       
 
         
         
