@@ -92,7 +92,8 @@
    ### 4、容器数据卷
         1、作用 数据持久化、容器间继承 + 共享数据
         
-        2、如何添加数据卷呢  
+        2、如何添加数据卷呢?(两种方式)
+        
            * 命令行 实现宿主机和容器的数据共享
               1、docker run -it -v 宿主机路径：容器路径 镜像ID   eg： (docker run -it -v /hostDataVolume: /containerDataVolume 2cd663b9e521)
               2、如何查看容器和宿主机数据挂载成功（数据共享）呢？ docker inspect 
@@ -100,9 +101,25 @@
               4、带权限的数据共享 比如让容器文件只读操作  eg:(docker run -it -v /hostDataVolume:/contailnerDataVolume:ro 2cd663b9e521) 执行上述命令 容器的目录只读 无法更改
               
               
+           * dockerfile
               
-           * dockerfile 体系结构
-              *
+   ### 4、Dockerfile            
+              
+          *  体系结构(关键保留字)
+              * FROM            基础镜像、当前镜像是基于哪个镜像的
+              * MAINTAINER      镜像的维修者和邮箱
+              * RUN             容器构建时需要运行的命令
+              * EXPOSE          当前容器对外暴露的端口
+              * WORKDIR         指定在容器创建、终端默认登陆进来的目录 一个落脚点
+              * ENV             指定构建镜像过程中设置环境变量
+              * ADD             将宿主机目录下的文件拷贝进镜像、且ADD命令会自动处理URL和假牙tar压缩包
+              * COPY            类似ADD、拷贝文件和目录到镜像中、将从构建上下文目录中<源路径>的文件/目录复制到新的一层的镜像内的<目标路径>位置
+              * VOLUME          容器数据卷、用于数据保存和持久化工作
+              * CMD             指定一个容器启动时要运行的命令
+              * ENTRYPOINT      指定一个容器启动时要运行的命令 ENTRYPOINT的目的和CMD一样 都是指定容器启动程序及参数
+              * ONBUILD         当构建一个被继承的Dockerfile时运行命令、父镜像在被子镜像继承后父镜像的onbuild被触发
+              
+              
          
    
    
