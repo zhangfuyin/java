@@ -101,9 +101,24 @@
               4、带权限的数据共享 比如让容器文件只读操作  eg:(docker run -it -v /hostDataVolume:/contailnerDataVolume:ro 2cd663b9e521) 执行上述命令 容器的目录只读 无法更改
               
               
-           * dockerfile
+           * dockerfile 注意：容器内的数据共享、因为处于可移植性和分享的考虑 用 -v 主机目录：容器目录 这种方法不能在Dockerfile中实现  由于宿主机目录依赖于特定宿主机的 不能保证所有的宿主机                             都存在这样的目录
+                1、编写dockerfile 文件 VOLUME保留字定义容器内数据卷
+                        FROM centos
+                        MAINTAINER zhangfuyin<690386511@qq.com>
+                        ENV WORK_DIR /usr/local
+                        WORKDIR $WORK_DIR
+                        RUN yum -y install vim
+                        RUN yum -y install net-tools
+                        VOLUME ["/volume1","/volume2"]
+
+                        RUN echo '容器构建成功！！'
+                        EXPOSE 80
+                        CMD /bin/bash
+                2、那么如何和宿主机实现数据共享呢 ？  docker inspect 查看 发现docker 已经默认加了容器数据卷的宿主机共享目录
+                
+                3、如何实现容器之间的数据共享呢 ？ 那么就要使用容器继承 docker run -it --name c2 --volumes-from c1  imagename
               
-   ### 5、Dockerfile            
+   ### 5、Dockerfile（镜像的描述文件）            
               
           *  体系结构(关键保留字)
               * FROM            基础镜像、当前镜像是基于哪个镜像的
