@@ -59,7 +59,7 @@
    ## 线程生命周期
    
    ![生命周期](https://github.com/zhangfuyin/java/blob/master/ThreadTest/img/QQ20210419-224002%402x.png)
-   
+      
    
    
    
