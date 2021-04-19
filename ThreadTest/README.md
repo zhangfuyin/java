@@ -58,5 +58,9 @@
    
    ## 线程生命周期
    
+   ![头像](hhttps://github.com/zhangfuyin/java/blob/ae615bc284dc184054f48e59aed7179716c4dc46/ThreadTest/img/QQ20210419-224002@2x.png)
+   
+   
+   
    
    
